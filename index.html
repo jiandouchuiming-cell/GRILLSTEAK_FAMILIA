@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html><head>
 <meta charset="utf-8"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -281,14 +281,14 @@
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script="" data-props="{&amp;quot;$preview&amp;quot;:{&amp;quot;width&amp;quot;:1280,&amp;quot;height&amp;quot;:900}}">
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
 class Component extends DCLogic {
   state = { menuOpen: false };
   renderVals() {
     return {
       menuOpen: this.state.menuOpen,
-      toggleMenu: () =&gt; this.setState(s =&gt; ({ menuOpen: !s.menuOpen })),
-      closeMenu: () =&gt; this.setState({ menuOpen: false }),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
     };
   }
 }
